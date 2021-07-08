@@ -1,15 +1,14 @@
-import json
 import pickle
+import json
 import numpy as np
-__location = None
+
+__locations = None
 __data_columns = None
 __model = None
 
-
-def price_prediction(location, sqft, bhk, bath):
+def get_estimated_price(location,sqft,bhk,bath):
     try:
-        loc_index = __data_columns.index(location.lower)
-
+        loc_index = __data_columns.index(location.lower())
     except:
         loc_index = -1
 
@@ -17,36 +16,34 @@ def price_prediction(location, sqft, bhk, bath):
     x[0] = sqft
     x[1] = bath
     x[2] = bhk
-    if loc_index >= 0:
+    if loc_index>=0:
         x[loc_index] = 1
 
-    return round(__model.predict([x])[0], 2)
+    return round(__model.predict([x])[0],2)
 
 
-def get_location():
-    return __location
+def load_saved_artifacts():
+    print("loading saved artifacts...start")
+    global  __data_columns
+    global __locations
 
-
-def load_file():
-    print('loading File ....... start')
-
-    global __location
-    global __model
-    global __data_columns
-
-    with open("./File/columns.json", 'r') as f:
-
+    with open("D:/programming/forgit/Flask/File/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
-        __location = __data_columns[3:]
+        __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
 
-    with open("./File/Bangladesh_home_price.pickle", 'rb') as f:
+    global __model
+    if __model is None:
+        with open('D:/programming/forgit/Flask/File/Bangladesh_home_price.pickle', 'rb') as f:
+            __model = pickle.load(f)
+    print("loading saved artifacts...done")
 
-        __model = pickle.load(f)
+def get_location_names():
+    return __locations
 
-    print('loading File ....... done')
-
+def get_data_columns():
+    return __data_columns
 
 if __name__ == '__main__':
-    load_file()
-    print(get_location())
-    print(price_prediction('kaharole', 1000, 2, 3))
+    load_saved_artifacts()
+    print(get_location_names())
+    print(get_estimated_price('companigonj',1000, 3, 2))
