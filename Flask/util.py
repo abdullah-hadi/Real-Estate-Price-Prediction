@@ -29,7 +29,7 @@ def load_saved_artifacts():
 
     with open("D:/programming/forgit/Flask/File/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
-        __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
+        __locations = __data_columns[3:]  
 
     global __model
     if __model is None:
