@@ -1,0 +1,97 @@
+*{
+
+margin: 0;
+padding: 0;
+/* background-color: black; */
+
+}
+.header{
+  background-image: url('banner01_page.jpg');
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+width:auto;
+  
+}
+
+.navbar .navbar-nav .nav-link{
+	font-weight: 400px;
+}
+.navbar .navbar-brand{
+	
+	font-size: 30px;
+
+}
+.navbar .navbar-nav .nav-item{
+
+	font-size: 13px !important;
+  margin:1px;
+  	font-weight: bold;
+  position: relative;
+  padding: 20px;
+}
+.header-article{
+	margin-top: 140px;
+	margin-bottom: 90px;
+  color:white;
+  background-color: rgba(53, 47, 139, 0.5);
+  
+}
+.header-article .contact-btn{
+text-decoration: none;
+color: aliceblue;
+background: rgba(0, 0, 0, 0.561);
+padding: 7px 20px;
+font-weight: 720;
+
+
+
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+color:  #6EB6DC !important;
+border-bottom: #6EB6DC  solid;
+
+}
+
+
+
+
+.collapse{
+
+  margin-left: px;
+}
+.services .services-image{
+	height: 120px;
+	width: 180px;
+	
+}
+.services .service-name{
+color: #5a9cc0;
+
+
+}
+/*footer{
+  background-color: #FFFFFF;
+ height: 20px;
+ width: 100%;
+}*/
+.services .para{
+  padding:10px ;
+}
+
+.services .service-name{
+
+margin-top: 15px;
+
+}
+footer {
+  margin-top: 10px;
+  background: #0c2777;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
