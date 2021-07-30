@@ -1,51 +1,238 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Bangladesh Home Price Prediction</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-	<link rel="stylesheet" href="style.css">
+  <title>Real Estate price</title>
+
+  <link rel="stylesheet" type="text/css" href="welcome.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
+
 <body>
-<div class="img"></div>
-<form class="form">
-	<h2 style="color:cyan">Area (Square Feet)</h2>
-    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" placeholder="1000">
-	<h2 style="color:cyan">Bedroom</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
-		<label for="radio-bhk-1">1</label>
-		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
-		<label for="radio-bhk-2">2</label>
-		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
-		<label for="radio-bhk-3">3</label>
-		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
-		<label for="radio-bhk-4">4</label>
-		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
-		<label for="radio-bhk-5">5</label>
-	</div>
-	</form>
-<form class="form">
-	<h2 style="color:cyan">Bathroom</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
-		<label for="radio-bath-1">1</label>
-		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
-		<label for="radio-bath-2">2</label>
-		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
-		<label for="radio-bath-3">3</label>
-		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
-		<label for="radio-bath-4">4</label>
-		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
-		<label for="radio-bath-5">5</label>
-	</div>
-		<h2 style="color:cyan" > Location</h2>
-	<div>
-  <select class="location" name="" id="uiLocations">
-    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-  </select>
-</div>
-	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Predict Price</button>
-	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+
+  <!-- header section-->
+  <header class="header">
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="" class="navbar-brand ">REAL ESTATE PRICE PREDICTION</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#dropmenu"><span
+            class="navbar-toggler-icon"></span></button>
+
+
+        <div class="collapse navbar-collapse " id="dropmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item "> <a href="" class="nav-link "> HOME</a></li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">CONTACT</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--header article-->
+    <article class="header-article">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h1>
+              WELCOME
+
+            </h1>
+            <p>
+              We deliver the best real estate deals with perfect timing
+              – it is very difficult when it's time for getting a new house
+              with perfect price and features.but worry not! It's so simple
+              to find the best real estate deals in your area with nijerbari.
+              com. nijerbari.com has a nationwide database of residences, which
+              is updated every day. So what are you waiting for? Find the
+              perfect location and the price predicted right now!
+
+            </p>
+            <a href="app.html " target="_blank" class="contact-btn">Predict Now</a>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </article>
+  </header>
+  <!--service block-->
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+          <h3 class="service-name" id="services">Our Services</h3>
+          <p class="text-dark service-text">
+          <h6>founded in 2020 we provide various services on Big Data</h6>
+          </p>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-4">
+          <img class="services-image" src="dataanalyst.jpg">
+          <h4 class="service-name">Data Analysis</h4>
+          <p class="para">
+            Best in class data insights with experienced data analysts
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="services-image" src="MLengineer.jpg">
+          <h4 class="service-name">ML Algorithms</h4>
+          <p class="para">
+            Hard working ML engineers who can provide smart solutions
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="services-image" src="computerVision.png">
+          <h4 class="service-name">Computer Vision</h4>
+          <p class="para">
+            Standalone CV applications with latest libraries
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-area">
+    <div class="footer-top" id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="default-box mb-2">
+              <h4 class="box-title" id="contact">Bijoy Biswas</h4>
+              <p class="para">
+                Navana Tower, Banani, Dhaka 1213.
+              </p>
+              <p>
+                Email : biswasbijoy414@gmail.com
+
+
+              </p>
+            </div>
+            <div class="default-box mb-2">
+              <h2 class="box-title">Phone</h2>
+              <p class="para">
+                +88 0171123456
+                <br>
+                +88 0258311234
+              </p>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="default-box mb-2">
+              <h4 class="box-title">Abdullah Al Hadi Mahfuz</h4>
+              <p class="para">
+                Navana Tower, Banani, Dhaka 1213.
+              </p>
+              <p>
+                Email : armahfuz47@gmail.com
+
+
+              </p>
+            </div>
+            <div class="default-box mb-2">
+              <h2 class="box-title">Phone</h2>
+              <p class="para">
+                +88 0171162629
+                <br>
+                +88 0258311295
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="social-area text-center">
+          <a href="#"><i class="fa fa-twitter"></i></a> |
+          <a href="#"><i class="fa fa-linkedin"></i></a> |
+          <a href="#"><i class="fa fa-facebook"></i></a> |
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <p class="text-center">Copyright© nijerbari.com | All rights Resereved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
+
+
+
+
+
+
+
+
+
 </html>
