@@ -5,15 +5,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
 	<link rel="stylesheet" href="app.css">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+	<div>
+		<!--navigation-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container">
+			<a href="" class="navbar-brand ">REAL ESTATE PRICE PREDICTION</a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#dropmenu"><span
+				class="navbar-toggler-icon"></span></button>
+	
+	
+			<div class="collapse navbar-collapse " id="dropmenu">
+			  <ul class="navbar-nav btn ">
+				<li class="nav-item "> <a href="index.html" class="nav-link "> HOME</a></li>
+				<li class="nav-item">
+				  <a href="index.html#services" class="nav-link">SERVICES</a>
+				</li>
+				<li class="nav-item">
+				  <a href="about.html" class="nav-link">ABOUT</a>
+				</li>
+				
+				<li class="nav-item">
+				  <a href="index.html#contact" class="nav-link">CONTACT</a>
+	
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	
+		<!--header article-->
 <div class="img"></div>
 <form class="form">
-	<h2 style="color:black;">Area (Square Feet)</h2>
+	<h5 style="color:white;">Area (Square Feet)</h5>
     <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" placeholder="1000">
-	<h2 style="color:black;">Bedroom</h2>
+	<h5 style="color:white;">Bedroom</h5>
 	<div class="switch-field">
 		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
 		<label for="radio-bhk-1">1</label>
@@ -28,7 +61,7 @@
 	</div>
 	</form>
 <form class="form">
-	<h2 style="color:black;">Bathroom</h2>
+	<h5 style="color:white;">Bathroom</h5>
 	<div class="switch-field">
 		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
 		<label for="radio-bath-1">1</label>
@@ -41,7 +74,7 @@
 		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
 		<label for="radio-bath-5">5</label>
 	</div>
-		<h2 style="color:aqua;" > Location</h2>
+		<h5 style="color:white;" > Location</h5>
 	<div>
   <select class="location" name="" id="uiLocations">
     <option value="" disabled="disabled" selected="selected">Choose a Location</option>
