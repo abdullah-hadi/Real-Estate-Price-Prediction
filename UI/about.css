@@ -1,0 +1,61 @@
+.img {
+  background: url('bed.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100% 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+footers {
+      margin-top: 10px;
+      /* background: rgb(228, 190, 119); */
+      color: black;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      display: block;
+    }
+.footer-bottoms {
+      margin-top: 140px;
+      background: #0c2777;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position:relative;
+      display: block;
+    }
+.default-box2{
+
+background: rgba(241, 212, 158, 0.452);
+color: black;
+padding: 10px;
+text-align: center;
+position: relative;
+display: block;
+
+
+
+    }
+.default-box{
+
+/* background: rgb(231, 210, 170); */
+background: rgba(241, 212, 158, 0.452);
+
+color: black;
+padding: 10px;
+/*text-align: left;*/
+position: relative;
+display: block;
+
+
+
+    }

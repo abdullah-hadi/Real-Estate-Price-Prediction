@@ -2,7 +2,7 @@
 
 margin: 0;
 padding: 0;
-/* background-color: black; */
+
 
 }
 .header{
@@ -24,7 +24,7 @@ width:auto;
 }
 .navbar .navbar-nav .nav-item{
 
-	font-size: 13px !important;
+	font-size: 18px !important;
   margin:1px;
   	font-weight: bold;
   position: relative;
@@ -48,10 +48,22 @@ font-weight: 720;
 
 
 }
+.contact-btn:hover
+{
 
+  background-color: rebeccapurple;
+  transition: .3s;
+  border-color: white;
+  border-style: solid;
+}
+/* .nav-item
+{
+  font-size: ;
+} */
 .navbar .navbar-nav .nav-item .nav-link:hover{
-color:  #6EB6DC !important;
+color:  #028AF9!important;
 border-bottom: #6EB6DC  solid;
+transition: 0.3s;
 
 }
 
@@ -95,3 +107,4 @@ footer {
   position: relative;
   display: block;
 }
+
