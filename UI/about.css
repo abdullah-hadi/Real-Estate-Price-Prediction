@@ -59,3 +59,194 @@ display: block;
 
 
     }
+
+.move{
+
+  padding-left: 185px;
+  position: relative;
+
+
+
+}
+
+
+
+
+.navbar .navbar-nav .nav-link{
+	font-weight: 400px;
+}
+.navbar .navbar-brand{
+	
+	font-size: 30px;
+
+}
+.navbar .navbar-nav .nav-item{
+
+	font-size: 18px !important;
+  margin:1px;
+  	font-weight: bold;
+  position: relative;
+  padding: 20px;
+}
+.header-article{
+	margin-top: 140px;
+	margin-bottom: 90px;
+  color:white;
+  background-color: rgba(53, 47, 139, 0.5);
+  
+}
+.header-article .contact-btn{
+text-decoration: none;
+color: aliceblue;
+background: rgba(0, 0, 0, 0.561);
+padding: 7px 20px;
+font-weight: 720;
+
+
+
+
+}
+.contact-btn:hover
+{
+
+  background-color: rebeccapurple;
+  transition: .3s;
+  border-color: white;
+  border-style: solid;
+}
+/* .nav-item
+{
+  font-size: ;
+} */
+.navbar .navbar-nav .nav-item .nav-link:hover{
+color:  #028AF9!important;
+border-bottom: #6EB6DC  solid;
+transition: 0.3s;
+
+}
+
+
+
+
+.collapse{
+
+  margin-left: px;
+}
+.services .services-image{
+	height: 120px;
+	width: 180px;
+	
+}
+.services .service-name{
+color: #5a9cc0;
+
+
+}
+/*footer{
+  background-color: #FFFFFF;
+ height: 20px;
+ width: 100%;
+}*/
+.services .para{
+  padding:10px ;
+}
+
+.services .service-name{
+
+margin-top: 15px;
+
+}
+
+
+
+.navbar .navbar-nav .nav-link{
+	font-weight: 400px;
+    color: white;
+}
+.navbar .navbar-brand{
+	
+	font-size: 30px;
+    color: white;
+
+}
+.navbar .navbar-nav .nav-item{
+
+	font-size: 18px !important;
+  margin:1px;
+  	font-weight: bold;
+  position: relative;
+  padding: 20px;
+  
+  
+}
+.header-article{
+	margin-top: 140px;
+	margin-bottom: 90px;
+  color:white;
+  /* color:rgb(144, 24, 24); */
+  background-color: rgba(53, 47, 139, 0.5);
+  
+}
+.header-article .contact-btn{
+text-decoration: none;
+color: aliceblue;
+background: rgba(0, 0, 0, 0.561);
+padding: 7px 20px;
+font-weight: 720;
+
+
+
+
+}
+.contact-btn:hover
+{
+
+  background-color: rebeccapurple;
+  transition: .3s;
+  border-color: white;
+  
+  border-style: solid;
+}
+/* .nav-item
+{
+  font-size: ;
+} */
+.navbar .navbar-nav .nav-item .nav-link:hover{
+color:  #028AF9!important;
+border-bottom: #6EB6DC  solid;
+transition: 0.3s;
+
+}
+
+
+
+
+.collapse{
+
+  margin-left: px;
+}
+.services .services-image{
+	height: 120px;
+	width: 180px;
+	
+}
+.services .service-name{
+color: #5a9cc0;
+
+
+
+}
+/*footer{
+  background-color: #FFFFFF;
+ height: 20px;
+ width: 100%;
+}*/
+.services .para{
+  padding:10px ;
+}
+
+.services .service-name{
+
+margin-top: 15px;
+
+}
